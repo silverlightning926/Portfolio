@@ -52,7 +52,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
             child: Text(
-              "<Learn More/>",
+              "> Learn More",
               style: GoogleFonts.mPlus1Code().copyWith(
                 fontSize: 17,
                 color: const Color(0xFF4AF626),
