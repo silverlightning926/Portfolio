@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/screens/RootScreen.dart';
 
 void main() {
   runApp(const Portfolio());
@@ -12,8 +13,11 @@ class Portfolio extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Portfolio',
-      theme: ThemeData.dark(),
-      home: null,
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: Colors.black,
+      ),
+      debugShowCheckedModeBanner: false,
+      home: const RootScreen(),
     );
   }
 }
