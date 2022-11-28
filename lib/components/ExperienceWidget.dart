@@ -40,7 +40,7 @@ class ExperienceWidget extends StatelessWidget {
                   fontSize: 25,
                 ),
               ),
-              const SizedBox(height: 3),
+              const SizedBox(height: 5),
               Text(
                 companyText,
                 style: GoogleFonts.mPlus1Code().copyWith(
