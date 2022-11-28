@@ -13,34 +13,40 @@ class NavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.end,
-      children: [
-        NavBarButton(
-          buttonText: "<Home/>",
-          onPressed: () => scrollToIndex(0),
+    return SizedBox(
+      width: MediaQuery.of(context).size.width,
+      child: FittedBox(
+        fit: BoxFit.scaleDown,
+        alignment: Alignment.topRight,
+        child: Row(
+          children: [
+            NavBarButton(
+              buttonText: "<Home/>",
+              onPressed: () => scrollToIndex(0),
+            ),
+            const SizedBox(width: 25),
+            NavBarButton(
+              buttonText: "<About/>",
+              onPressed: () => scrollToIndex(1),
+            ),
+            const SizedBox(width: 25),
+            NavBarButton(
+              buttonText: "<Experience/>",
+              onPressed: () => scrollToIndex(2),
+            ),
+            const SizedBox(width: 25),
+            NavBarButton(
+              buttonText: "<Projects/>",
+              onPressed: () => scrollToIndex(3),
+            ),
+            const SizedBox(width: 25),
+            NavBarButton(
+              buttonText: "<Contact/>",
+              onPressed: () => scrollToIndex(4),
+            ),
+          ],
         ),
-        const SizedBox(width: 25),
-        NavBarButton(
-          buttonText: "<About/>",
-          onPressed: () => scrollToIndex(1),
-        ),
-        const SizedBox(width: 25),
-        NavBarButton(
-          buttonText: "<Experience/>",
-          onPressed: () => scrollToIndex(2),
-        ),
-        const SizedBox(width: 25),
-        NavBarButton(
-          buttonText: "<Projects/>",
-          onPressed: () => scrollToIndex(3),
-        ),
-        const SizedBox(width: 25),
-        NavBarButton(
-          buttonText: "<Contact/>",
-          onPressed: () => scrollToIndex(4),
-        ),
-      ],
+      ),
     );
   }
 
