@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
 import 'NavBarButton.dart';
@@ -43,6 +44,29 @@ class NavBar extends StatelessWidget {
             NavBarButton(
               buttonText: "<Contact/>",
               onPressed: () => scrollToIndex(4),
+            ),
+            const SizedBox(width: 25),
+            MaterialButton(
+              elevation: 0,
+              hoverElevation: 0,
+              color: Colors.transparent,
+              hoverColor: const Color.fromARGB(100, 255, 255, 255),
+              shape: const RoundedRectangleBorder(
+                side: BorderSide(
+                  color: Color(0xFF03C03C),
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(10),
+                ),
+              ),
+              onPressed: () {},
+              child: Text(
+                "Resume",
+                style: GoogleFonts.mPlus1Code().copyWith(
+                  fontSize: 19,
+                  color: Colors.white,
+                ),
+              ),
             ),
           ],
         ),
