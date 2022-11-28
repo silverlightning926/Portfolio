@@ -44,9 +44,12 @@ class AboutPage extends StatelessWidget {
               ),
             ],
           ),
-          Image.network(
-            "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
-            scale: 1.5,
+          Padding(
+            padding: const EdgeInsets.all(75.0),
+            child: Image.asset(
+              "./assets/images/profileImage.jpg",
+              height: MediaQuery.of(context).size.height / 2,
+            ),
           ),
         ],
       ),
