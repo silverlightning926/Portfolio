@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:scroll_to_index/scroll_to_index.dart';
 
 import 'NavBarButton.dart';
 
 class NavBar extends StatelessWidget {
-  final GlobalKey homeScreenKey;
-  final GlobalKey aboutScreenKey;
+  final AutoScrollController autoScrollController;
 
   const NavBar({
     Key? key,
-    required this.homeScreenKey,
-    required this.aboutScreenKey,
+    required this.autoScrollController,
   }) : super(key: key);
 
   @override
@@ -19,44 +18,36 @@ class NavBar extends StatelessWidget {
       children: [
         NavBarButton(
           buttonText: "<Home/>",
-          onPressed: () {
-            scrollToGlobalKey(homeScreenKey);
-          },
+          onPressed: () => scrollToIndex(0),
         ),
         const SizedBox(width: 25),
         NavBarButton(
           buttonText: "<About/>",
-          onPressed: () {
-            scrollToGlobalKey(aboutScreenKey);
-          },
+          onPressed: () => scrollToIndex(1),
         ),
         const SizedBox(width: 25),
         NavBarButton(
           buttonText: "<Experience/>",
-          onPressed: () {},
+          onPressed: () => scrollToIndex(2),
         ),
         const SizedBox(width: 25),
         NavBarButton(
           buttonText: "<Projects/>",
-          onPressed: () {},
+          onPressed: () => scrollToIndex(3),
         ),
         const SizedBox(width: 25),
         NavBarButton(
           buttonText: "<Contact/>",
-          onPressed: () {},
+          onPressed: () => scrollToIndex(4),
         ),
       ],
     );
   }
 
-  void scrollToGlobalKey(GlobalKey globalKey) {
-    final targetContext = globalKey.currentContext;
-    if (targetContext != null) {
-      Scrollable.ensureVisible(
-        targetContext,
-        duration: const Duration(milliseconds: 400),
-        curve: Curves.easeIn,
-      );
-    }
+  Future<dynamic> scrollToIndex(int index) {
+    return autoScrollController.scrollToIndex(
+      index,
+      preferPosition: AutoScrollPosition.middle,
+    );
   }
 }
