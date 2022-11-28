@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'ExperienceWidget.dart';
+
 class ExperiencePage extends StatelessWidget {
   final BoxConstraints constraints;
 
@@ -37,6 +39,14 @@ class ExperiencePage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 10),
+            const ExperienceWidget(
+              roleText: "Software Engineer & Technical Specialist",
+              companyText: "City Of Carnation",
+              timeText: "Nov 2022 - Current",
+              bodyText:
+                  "• Developing a mobile application that for citizens of the town which would include announcements, information, and more\n"
+                  "• Managed, maintained, and updated different software systems used by the City of Carnation",
+            ),
           ],
         ),
       ),
