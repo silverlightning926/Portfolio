@@ -9,8 +9,8 @@ class RootScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final UniqueKey homeScreenKey = UniqueKey();
-    final UniqueKey aboutScreenKey = UniqueKey();
+    final GlobalKey homeScreenKey = GlobalKey();
+    final GlobalKey aboutScreenKey = GlobalKey();
 
     return SafeArea(
       child: Scaffold(
