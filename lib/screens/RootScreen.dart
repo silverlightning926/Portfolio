@@ -8,13 +8,18 @@ import 'package:scroll_to_index/scroll_to_index.dart';
 import '../components/AboutPage.dart';
 import '../components/NavigationBar/NavBar.dart';
 
-class RootScreen extends StatelessWidget {
+class RootScreen extends StatefulWidget {
   const RootScreen({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    final AutoScrollController autoScrollController = AutoScrollController();
+  State<RootScreen> createState() => _RootScreenState();
+}
 
+class _RootScreenState extends State<RootScreen> {
+  final AutoScrollController autoScrollController = AutoScrollController();
+
+  @override
+  Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         body: Padding(
