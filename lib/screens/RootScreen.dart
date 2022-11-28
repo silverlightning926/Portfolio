@@ -33,7 +33,7 @@ class _RootScreenState extends State<RootScreen> {
                 child: LayoutBuilder(
                   builder: (BuildContext context, BoxConstraints constraints) {
                     return ListView(
-                      shrinkWrap: true,
+                      scrollDirection: Axis.vertical,
                       controller: autoScrollController,
                       children: [
                         AutoScrollTag(
