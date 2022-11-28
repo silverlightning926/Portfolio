@@ -27,7 +27,7 @@ class NavBarButton extends StatelessWidget {
       child: Text(
         buttonText,
         style: GoogleFonts.mPlus1Code().copyWith(
-          fontSize: 17,
+          fontSize: 19,
           color: const Color(0xFF4AF626),
         ),
       ),
