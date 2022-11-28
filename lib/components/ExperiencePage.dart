@@ -13,19 +13,23 @@ class ExperiencePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: constraints.maxHeight,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          SelectableText(
-            "Experience",
-            style: GoogleFonts.mPlus1Code().copyWith(
-              fontSize: 60,
-              fontWeight: FontWeight.w100,
+      child: FittedBox(
+        fit: BoxFit.scaleDown,
+        alignment: Alignment.centerLeft,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SelectableText(
+              "Experience",
+              style: GoogleFonts.mPlus1Code().copyWith(
+                fontSize: 60,
+                fontWeight: FontWeight.w100,
+              ),
             ),
-          ),
-          const SizedBox(height: 10),
-        ],
+            const SizedBox(height: 10),
+          ],
+        ),
       ),
     );
   }
