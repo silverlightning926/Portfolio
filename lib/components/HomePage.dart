@@ -31,7 +31,8 @@ class HomePage extends StatelessWidget {
             width: MediaQuery.of(context).size.width * 0.5,
             child: SelectableText(
               "I am a software engineering student currently in my last year at the University of Washington - Bothell.\n\n"
-              "Always looking to learn more. If you know any open opportunities, please feel free to contact me!",
+              "Always looking to learn more. If you know of any open opportunities, please feel free to contact me!",
+              minLines: 4,
               style: GoogleFonts.mPlus1Code().copyWith(
                 fontSize: 22,
                 color: const Color(0xAAFFFFFF),

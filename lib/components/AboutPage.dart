@@ -33,9 +33,9 @@ class AboutPage extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 0.5,
                 child: SelectableText(
                   "My name is Siddharth Rao. I usually go by Sidd. "
-                  "I am currently studying University Of Washington - Bothell. Currently completing my last year of my bachelor's degree in computer science and software engineering.\n\n"
+                  "I am currently studying at the University Of Washington - Bothell. Currently completing my last year of my bachelor's degree in computer science and software engineering.\n\n"
                   "My passion for technology started from a young age. Growing up, I learned multiple skill sets such as programming languages, frameworks, tools, and more!\n\n"
-                  "I am now looking for more computer science opportunities, in industry and other environments, to grow my skill set far beyond",
+                  "I am now looking for more computer science opportunities, in industry and other environments, to grow my skill set far beyond.",
                   style: GoogleFonts.mPlus1Code().copyWith(
                     fontSize: 20,
                     color: const Color(0xAAFFFFFF),
