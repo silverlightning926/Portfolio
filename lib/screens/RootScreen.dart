@@ -4,19 +4,14 @@ import 'package:portfolio/components/HomePage.dart';
 import '../components/AboutPage.dart';
 import '../components/NavigationBar/NavBar.dart';
 
-class RootScreen extends StatefulWidget {
+class RootScreen extends StatelessWidget {
   const RootScreen({Key? key}) : super(key: key);
 
   @override
-  State<RootScreen> createState() => _RootScreenState();
-}
-
-class _RootScreenState extends State<RootScreen> {
-  final GlobalKey homeScreenKey = GlobalKey();
-  final GlobalKey aboutScreenKey = GlobalKey();
-
-  @override
   Widget build(BuildContext context) {
+    final UniqueKey homeScreenKey = UniqueKey();
+    final UniqueKey aboutScreenKey = UniqueKey();
+
     return SafeArea(
       child: Scaffold(
         body: Padding(
