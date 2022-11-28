@@ -22,6 +22,7 @@ class RootScreen extends StatelessWidget {
                     return ListView(
                       children: [
                         HomePage(constraints: constraints),
+                        AboutPage(constraints: constraints),
                       ],
                     );
                   },
