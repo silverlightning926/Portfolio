@@ -2,16 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
+  final BoxConstraints constraints;
+
   const HomePage({
     Key? key,
+    required this.constraints,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * 0.9215,
+      height: constraints.maxHeight,
       child: Column(
-        mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -19,15 +21,7 @@ class HomePage extends StatelessWidget {
             "Siddharth\nRao",
             style: GoogleFonts.mPlus1Code().copyWith(
               fontSize: 100,
-              foreground: Paint()
-                ..shader = const LinearGradient(
-                  colors: <Color>[
-                    Color(0xFF03C03C),
-                    Color(0xFF17B169),
-                  ],
-                ).createShader(
-                  const Rect.fromLTWH(0.0, 0.0, 200.0, 70.0),
-                ),
+              fontWeight: FontWeight.w500,
             ),
           ),
           const SizedBox(
@@ -36,9 +30,12 @@ class HomePage extends StatelessWidget {
           SizedBox(
             width: MediaQuery.of(context).size.width * 0.5,
             child: SelectableText(
-              "I am a software engineering student currently in my last year at the University of Washington - Bothell.\n"
+              "I am a software engineering student currently in my last year at the University of Washington - Bothell.\n\n"
               "Always looking to learn more. If you know any open opportunities, please feel free to contact me!",
-              style: GoogleFonts.mPlus1Code().copyWith(fontSize: 20),
+              style: GoogleFonts.mPlus1Code().copyWith(
+                fontSize: 22,
+                color: const Color(0xAAFFFFFF),
+              ),
             ),
           ),
           const SizedBox(
@@ -58,7 +55,7 @@ class HomePage extends StatelessWidget {
                 color: const Color(0xFF4AF626),
               ),
             ),
-          )
+          ),
         ],
       ),
     );

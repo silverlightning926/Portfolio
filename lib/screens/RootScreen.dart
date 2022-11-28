@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/components/HomePage.dart';
 
-import '../components/HomePage.dart';
+import '../components/AboutPage.dart';
 import '../components/NavigationBar/NavBar.dart';
 
 class RootScreen extends StatelessWidget {
@@ -16,10 +17,14 @@ class RootScreen extends StatelessWidget {
             children: [
               const NavBar(),
               Expanded(
-                child: ListView(
-                  children: const [
-                    HomePage(),
-                  ],
+                child: LayoutBuilder(
+                  builder: (BuildContext context, BoxConstraints constraints) {
+                    return ListView(
+                      children: [
+                        HomePage(constraints: constraints),
+                      ],
+                    );
+                  },
                 ),
               ),
             ],

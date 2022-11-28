@@ -13,6 +13,11 @@ class NavBar extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         NavBarButton(
+          buttonText: "<Home/>",
+          onPressed: () {},
+        ),
+        const SizedBox(width: 25),
+        NavBarButton(
           buttonText: "<About/>",
           onPressed: () {},
         ),
