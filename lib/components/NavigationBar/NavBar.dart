@@ -77,7 +77,7 @@ class NavBar extends StatelessWidget {
   Future<dynamic> scrollToIndex(int index) {
     return autoScrollController.scrollToIndex(
       index,
-      preferPosition: AutoScrollPosition.middle,
+      preferPosition: AutoScrollPosition.begin,
     );
   }
 }
