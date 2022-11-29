@@ -20,7 +20,13 @@ class ExperiencePanel extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.2),
+        color: Colors.blue.withOpacity(0.25),
+        image: DecorationImage(
+          image: AssetImage(bgImagePath),
+          fit: BoxFit.cover,
+          colorFilter: ColorFilter.mode(
+              Colors.black.withOpacity(0.2), BlendMode.dstATop),
+        ),
         borderRadius: const BorderRadius.all(
           Radius.circular(20),
         ),
@@ -40,7 +46,7 @@ class ExperiencePanel extends StatelessWidget {
             subHeadingText,
             textAlign: TextAlign.center,
             style: GoogleFonts.mPlus1Code().copyWith(
-              fontSize: 17,
+              fontSize: 20,
             ),
           ),
           Text(
