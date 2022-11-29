@@ -31,32 +31,35 @@ class ExperiencePanel extends StatelessWidget {
           Radius.circular(20),
         ),
       ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Text(
-            headingText,
-            textAlign: TextAlign.center,
-            style: GoogleFonts.mPlus1Code().copyWith(
-              fontSize: 23,
+      child: FittedBox(
+        fit: BoxFit.contain,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              headingText,
+              textAlign: TextAlign.center,
+              style: GoogleFonts.mPlus1Code().copyWith(
+                fontSize: 23,
+              ),
             ),
-          ),
-          Text(
-            subHeadingText,
-            textAlign: TextAlign.center,
-            style: GoogleFonts.mPlus1Code().copyWith(
-              fontSize: 20,
+            Text(
+              subHeadingText,
+              textAlign: TextAlign.center,
+              style: GoogleFonts.mPlus1Code().copyWith(
+                fontSize: 20,
+              ),
             ),
-          ),
-          Text(
-            subtitleText,
-            textAlign: TextAlign.center,
-            style: GoogleFonts.mPlus1Code().copyWith(
-              fontSize: 17,
+            Text(
+              subtitleText,
+              textAlign: TextAlign.center,
+              style: GoogleFonts.mPlus1Code().copyWith(
+                fontSize: 17,
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
