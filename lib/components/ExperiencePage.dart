@@ -49,7 +49,7 @@ class ExperiencePage extends StatelessWidget {
                 childAspectRatio: 2,
                 children: const [
                   ExperiencePanel(
-                    headingText: "Software Engineer & Technical Specialist",
+                    headingText: "Software Developer & Technical Specialist",
                     subHeadingText: "City Of Carnation",
                     subtitleText: "Nov 2022 - Current",
                     bgImagePath: "./images/cityOfCarnation.jpg",
@@ -61,7 +61,7 @@ class ExperiencePage extends StatelessWidget {
                     bgImagePath: "./images/universityOfWashington.jpg",
                   ),
                   ExperiencePanel(
-                    headingText: "Mobile Application Developer & Designer",
+                    headingText: "Software Developer & Designer",
                     subHeadingText: "Sensiable",
                     subtitleText: "July 2022 - Current",
                     bgImagePath: "./images/sensiable.webp",
@@ -74,7 +74,7 @@ class ExperiencePage extends StatelessWidget {
                   ),
                   ExperiencePanel(
                     headingText: "Lead Developer & Project Lead",
-                    subHeadingText: "Duvall Days",
+                    subHeadingText: "Duvall Days App",
                     subtitleText: "Nov 2018 - Jun 201",
                     bgImagePath: "./images/duvallDays.jfif",
                   ),
