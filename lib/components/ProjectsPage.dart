@@ -67,7 +67,7 @@ class ProjectsPage extends StatelessWidget {
                   ),
                   ProjectPanel(
                     headingText: "2022 FRC Robot - Casey",
-                    subHeadingText: "FRC #4089 - Stealth Robotics",
+                    subHeadingText: "FRC Team #4089 - Stealth Robotics",
                     actionBar: [
                       IconButton(
                         splashRadius: 20,
@@ -113,7 +113,7 @@ class ProjectsPage extends StatelessWidget {
                   ),
                   ProjectPanel(
                     headingText: "2021 FTC Robot",
-                    subHeadingText: "FTC #13648 - Jankbot",
+                    subHeadingText: "FTC Team #13648 - Jankbot",
                     actionBar: [
                       IconButton(
                         splashRadius: 20,
@@ -133,7 +133,7 @@ class ProjectsPage extends StatelessWidget {
                   ),
                   ProjectPanel(
                     headingText: "2020 FTC Robot",
-                    subHeadingText: "FTC #13648 - Jankbot",
+                    subHeadingText: "FTC Team #13648 - Jankbot",
                     actionBar: [
                       IconButton(
                         splashRadius: 20,
